@@ -4,25 +4,9 @@
   gap: 24px;
 }
 
-.demo-warning {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  padding: 14px 16px;
-  border: 1px solid #f3e5bf;
-  border-radius: 9px;
-  background: #fffbef;
-  color: #98712c;
-  font-size: 12px;
-}
-
-.demo-warning svg {
-  flex-shrink: 0;
-}
-
 .stats-grid {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 18px;
 }
 
@@ -40,25 +24,6 @@
   padding: 23px;
 }
 
-.info-card-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  color: #168653;
-}
-
-.info-card-header h3 {
-  font-size: 15px;
-  color: #17251f;
-}
-
-.info-card > p {
-  color: #87938b;
-  font-size: 11px;
-  line-height: 1.7;
-  margin: 14px 0 18px;
-}
-
 .info-item {
   display: flex;
   flex-direction: column;
@@ -67,13 +32,89 @@
   border-top: 1px solid #edf0ed;
 }
 
-.info-item strong {
-  color: #26372e;
-  font-size: 12px;
+.source-note {
+  padding: 14px 16px;
+  border: 1px solid #dae8df;
+  border-radius: 9px;
+  background: #edf7f0;
+  color: #315344;
+  font-size: 13px;
 }
 
-.info-item span {
-  color: #87938b;
-  font-size: 11px;
-  line-height: 1.5;
+.overview a {
+  color: #126d46;
+  text-underline-offset: 3px;
+}
+
+.info-card h2 {
+  font-size: 17px;
+}
+
+.info-card > p {
+  color: #52635a;
+  font-size: 13px;
+}
+
+.contract-search {
+  display: grid;
+  gap: 7px;
+  max-width: 400px;
+  margin-top: 16px;
+  font-size: 13px;
+}
+
+.contract-search input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #b5c8bf;
+  border-radius: 8px;
+}
+
+.contract-scroll {
+  overflow-x: auto;
+}
+
+.contract-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+
+.contract-table th,
+.contract-table td {
+  padding: 10px;
+  border-bottom: 1px solid #e9eeeb;
+  text-align: left;
+  vertical-align: top;
+}
+
+.contract-table td:not(:first-child) {
+  white-space: nowrap;
+}
+
+.government-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 230px), 1fr));
+  gap: 16px;
+  margin: 16px 0;
+}
+
+.government-profile {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.government-profile img {
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.government-profile h3 {
+  font-size: 15px;
+}
+
+.government-profile p {
+  color: #52635a;
+  font-size: 13px;
 }

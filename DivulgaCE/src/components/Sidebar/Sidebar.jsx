@@ -2,9 +2,8 @@
 import {
   LayoutDashboard,
   Wallet,
-  History,
+  FileText,
   Users,
-  ArrowLeftRight,
   ShieldCheck
 } from 'lucide-react';
 
@@ -12,11 +11,10 @@ import './Sidebar.css';
 
 function Sidebar() {
   const menuItems = [
-    { label: 'Visão geral', icon: LayoutDashboard, active: true },
-    { label: 'Despesas', icon: Wallet },
-    { label: 'Histórico', icon: History },
-    { label: 'Responsáveis', icon: Users },
-    { label: 'Comparações', icon: ArrowLeftRight }
+    { label: 'Visão geral', icon: LayoutDashboard, href: '#visao-geral' },
+    { label: 'Despesas', icon: Wallet, href: '#despesas' },
+    { label: 'Contratos', icon: FileText, href: '#contratos' },
+    { label: 'Governo', icon: Users, href: '#governo' }
   ];
 
   return (
@@ -39,9 +37,9 @@ function Sidebar() {
 
               return (
                 <a
-                  href="#"
+                  href={item.href}
                   key={item.label}
-                  className={`nav-item ${item.active ? 'active' : ''}`}
+                  className="nav-item"
                 >
                   <Icon size={19} strokeWidth={1.8} />
                   <span>{item.label}</span>

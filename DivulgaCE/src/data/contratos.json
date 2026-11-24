@@ -1,0 +1,263 @@
+{
+  "consultadoEm": "2026-11-24",
+  "inicio": "2026-01-01",
+  "fim": "2026-01-10",
+  "contratos": [
+    {
+      "isn_sic": 1414246,
+      "descricao_objeto": "CONTRATO PARA COBERTURA DE CUSTOS EM ASSISTÊNCIA MÉDICO HOSPITALAR NA MODALIDADE COLETIVO EMPRESARIAL  PARA OS EMPREGADOS DO METROFOR",
+      "data_assinatura": "2026-01-01T00:00:00.000-03:00",
+      "valor_contrato": "3131616.73",
+      "descricao_situacao": "EM EXECUÇÃO - NORMAL",
+      "cod_orgao": "08200007"
+    },
+    {
+      "isn_sic": 1414253,
+      "descricao_objeto": "CONTRATO DE ADESÃO AO PLANO DE CONTRIBUIÇÃO DEFINIDA DA PATROCINADORA METROFOR",
+      "data_assinatura": "2026-01-01T00:00:00.000-03:00",
+      "valor_contrato": "674110.88",
+      "descricao_situacao": "EM EXECUÇÃO - NORMAL",
+      "cod_orgao": "08200007"
+    },
+    {
+      "isn_sic": 1414256,
+      "descricao_objeto": "CESSÃO DE UTILIZAÇÃO DOS CARTOES ELETRONICOS INTELIGENTES PASSECARD AS PESSOAS FÍSICAS E JURÍDICAS",
+      "data_assinatura": "2026-01-01T00:00:00.000-03:00",
+      "valor_contrato": "739724.2",
+      "descricao_situacao": "EM EXECUÇÃO - NORMAL",
+      "cod_orgao": "08200007"
+    },
+    {
+      "isn_sic": 1414205,
+      "descricao_objeto": "CONCESSÃO DE PLANO COLETIVO EMPRESARIAL  DO TIPO AMBULATORIAL E HOSPITALAR PARA OS EMPREGADOS DO METROFOR",
+      "data_assinatura": "2026-01-01T00:00:00.000-03:00",
+      "valor_contrato": "2019916.38",
+      "descricao_situacao": "EM EXECUÇÃO - NORMAL",
+      "cod_orgao": "08200007"
+    },
+    {
+      "isn_sic": 1414210,
+      "descricao_objeto": "CONTRATO DE PLANO COLETIVO EMPRESARIAL DE COBERTURA DE PROCEDIMENTOS DE ASSISTENCIA ODONTOLÓGICA",
+      "data_assinatura": "2026-01-01T00:00:00.000-03:00",
+      "valor_contrato": "5331.57",
+      "descricao_situacao": "VENCIDO",
+      "cod_orgao": "08200007"
+    },
+    {
+      "isn_sic": 1414240,
+      "descricao_objeto": "CONCESSÃO DE PLANO COLETIVO EMPRESARIAL  DO TIPO ODONTOLÓGICO PARA OS EMPREGADOS DO METROFOR",
+      "data_assinatura": "2026-01-01T00:00:00.000-03:00",
+      "valor_contrato": "105298.44",
+      "descricao_situacao": "EM EXECUÇÃO - NORMAL",
+      "cod_orgao": "08200007"
+    },
+    {
+      "isn_sic": 1414249,
+      "descricao_objeto": "CONCESSÃO DE PLANO COLETIVO EMPRESARIAL  DO TIPO AMBULATORIAL E HOSPITALAR PARA OS EMPREGADOS DO METROFOR",
+      "data_assinatura": "2026-01-01T00:00:00.000-03:00",
+      "valor_contrato": "2946906.66",
+      "descricao_situacao": "EM EXECUÇÃO - NORMAL",
+      "cod_orgao": "08200007"
+    },
+    {
+      "isn_sic": 1413315,
+      "descricao_objeto": "Aquisição de Extintores , Grupo 01 (Itens 01 a 05)",
+      "data_assinatura": "2026-01-05T00:00:00.000-03:00",
+      "valor_contrato": "70805.0",
+      "descricao_situacao": "EM EXECUÇÃO - NORMAL",
+      "cod_orgao": "08200007"
+    },
+    {
+      "isn_sic": 1412483,
+      "descricao_objeto": "REFORMA (CIVIL/ELÉTRICA) DA QUADRA E SUBSTITUIÇÃO DOS QUADROS DE MEDIÇÃO DIRETA DA SUBESTAÇÃO - EEM GENERAL MURILO BORGES MOREIRA - SEFOR 2",
+      "data_assinatura": "2026-01-05T00:00:00.000-03:00",
+      "valor_contrato": "99000.0",
+      "descricao_situacao": "EM EXECUÇÃO - NORMAL",
+      "cod_orgao": "22000000"
+    },
+    {
+      "isn_sic": 1412493,
+      "descricao_objeto": "Estruturação e Fortalecimento dos Organismos de Políticas para as Mulheres do Ceará através da realização de 3 eventos de capacitação para gestores e técnicas de Organismos de Políticas para Mulheres municipais.",
+      "data_assinatura": "2026-01-05T00:00:00.000-03:00",
+      "valor_contrato": "59000.0",
+      "descricao_situacao": "EM EXECUÇÃO - NORMAL",
+      "cod_orgao": "62000000"
+    },
+    {
+      "isn_sic": 1412461,
+      "descricao_objeto": "SERVIÇOS DE MANUTENÇÃO CORRETIVA E PREVENTIVA EM PRÉDIOS PÚBLICOS - SECULT - MUSEU SACRO AQUIRAZ.",
+      "data_assinatura": "2026-01-05T00:00:00.000-03:00",
+      "valor_contrato": "576148.49",
+      "descricao_situacao": "EM EXECUÇÃO - NORMAL",
+      "cod_orgao": "43200007"
+    },
+    {
+      "isn_sic": 1412404,
+      "descricao_objeto": "TERMO DE DISPENSA DE LICITAÇÃO Nº. 113/2025/ISSEC. Contratação de serviços médicos para tratamento com o medicamento ATEZOLIZUMAB 1.200 mg EV, conforme consta em decisão judicial e no termo de referência. Para atender decisão proferida nos autos do processo judicial n° 3002639-90.2024.8.06.0151, que concedeu o pedido à autora, Sra. MARIA DE JESUS FREIRES FERNANDES.",
+      "data_assinatura": "2026-01-05T00:00:00.000-03:00",
+      "valor_contrato": "550000.0",
+      "descricao_situacao": "EM EXECUÇÃO - NORMAL",
+      "cod_orgao": "46200008"
+    },
+    {
+      "isn_sic": 1411806,
+      "descricao_objeto": "Serviços de Manutenção/Conservação da Malha Viária do Distrito Operacional de Aracoiaba - CE.",
+      "data_assinatura": "2026-01-06T00:00:00.000-03:00",
+      "valor_contrato": "23269999.55",
+      "descricao_situacao": "EM EXECUÇÃO - NORMAL",
+      "cod_orgao": "43200007"
+    },
+    {
+      "isn_sic": 1415961,
+      "descricao_objeto": "Aquisição de sementes de algodão transgênico BRS 500 B2RF, devidamente registradas no Registro Nacional de Cultivares ¿ RNC/MAPA e com eventos aprovados pela CTNBio, destinadas à execução do Programa Estadual de Fortalecimento e Revitalização da Cotonicultura no Ceará, conforme Lei Estadual nº 19.410/2025, visando à implementação de até 5.000 hectares\nde cultivo nos municípios das regiões do Sertão dos Inhamuns e Sertão Central.",
+      "data_assinatura": "2026-01-06T00:00:00.000-03:00",
+      "valor_contrato": "5690000.0",
+      "descricao_situacao": "EM EXECUÇÃO - NORMAL",
+      "cod_orgao": "56000000"
+    },
+    {
+      "isn_sic": 1443968,
+      "descricao_objeto": "AQUISIÇÃO DE MATERIAL DE CONSUMO ATRAVÉS DA ATA DE REGISTRO DE PREÇO Nº 2025/35173 (FILME PVC)",
+      "data_assinatura": "2026-01-06T00:00:00.000-03:00",
+      "valor_contrato": "264.6",
+      "descricao_situacao": "EM EXECUÇÃO - NORMAL",
+      "cod_orgao": "24200324"
+    },
+    {
+      "isn_sic": 1412420,
+      "descricao_objeto": "água Mineral, natural da fonte, sem gás, acondicionada em garrafão retornável de 20 litros, fabricado em polipropileno ou policarbonato, transparente, resistente.",
+      "data_assinatura": "2026-01-06T00:00:00.000-03:00",
+      "valor_contrato": "6461.0",
+      "descricao_situacao": "EM EXECUÇÃO - NORMAL",
+      "cod_orgao": "46200009"
+    },
+    {
+      "isn_sic": 1412197,
+      "descricao_objeto": "Prestação de serviços de fornecimento de alimentos prontos, incluindo coffee breaks, lanches e coquetéis, sob demanda, para eventos institucionais da SEFAZ/CE, de acordo com o contrato nº 112/2025.",
+      "data_assinatura": "2026-01-06T00:00:00.000-03:00",
+      "valor_contrato": "120050.0",
+      "descricao_situacao": "EM EXECUÇÃO - NORMAL",
+      "cod_orgao": "19000000"
+    },
+    {
+      "isn_sic": 1412490,
+      "descricao_objeto": "A contratação de empresa especializada nos serviços de instalação da pré-instalação de ar condicionado (rede frigorígena), limpeza da pré-instalação de ar condicionado (rede frigorígena), desinstalação de ares condicionados, instalação de ares condicionados e limpeza, para atender as necessidades da Secretaria das Mulheres do Estado do Ceará em suas instalações",
+      "data_assinatura": "2026-01-06T00:00:00.000-03:00",
+      "valor_contrato": "60000.0",
+      "descricao_situacao": "EM EXECUÇÃO - NORMAL",
+      "cod_orgao": "62000000"
+    },
+    {
+      "isn_sic": 1412504,
+      "descricao_objeto": "Serviços de manutenção preventiva e corretiva dos equipamentos Serras Sagitais, por 12 doze) meses, para suprir as necessidades do HMCASG.",
+      "data_assinatura": "2026-01-06T00:00:00.000-03:00",
+      "valor_contrato": "89880.0",
+      "descricao_situacao": "EM EXECUÇÃO - NORMAL",
+      "cod_orgao": "24200214"
+    },
+    {
+      "isn_sic": 1412433,
+      "descricao_objeto": "Contratação dos Serviços Postais e telemático. Contratação de produtos e serviços por meio de Pacote de Serviços dos CORREIOS mediante adesão ao Termo de Condições Comerciais, que permite a compra de produtos e utilização dos diversos serviços exclusivos dos CORREIOS por meio dos canais de atendimento disponibilizados.",
+      "data_assinatura": "2026-01-07T00:00:00.000-03:00",
+      "valor_contrato": "600000.0",
+      "descricao_situacao": "EM EXECUÇÃO - NORMAL",
+      "cod_orgao": "19000000"
+    },
+    {
+      "isn_sic": 1412459,
+      "descricao_objeto": "CT 002/2026 - IL 015/2025 - CODEP - Constitui objeto deste Instrumento, a contratação de cooperativa para captação, pasteurização, envasamento, transporte e entrega de leite bovino pasteurizado integral e/ou leite caprino padronizado para o PROGRAMA DE AQUISIÇÃO DE ALIMENTOS, referentes ao(s) Lote(s) LOTE BOVINO: 23 (1.700 litros). com um volume total de  124.100 litros de Leites bovino.",
+      "data_assinatura": "2026-01-07T00:00:00.000-03:00",
+      "valor_contrato": "533630.0",
+      "descricao_situacao": "VENCIDO",
+      "cod_orgao": "21000000"
+    },
+    {
+      "isn_sic": 1412462,
+      "descricao_objeto": "EXECUÇÃO DOS SERVIÇOS DE RECUPERAÇÃO E PAVIMENTAÇÃO DE VIAS DE TRÂNSITO URBANO E RODOVIÁRIO COM O OBJETIVO DE PROMOVER A SEGURANÇA DE VEÍCULOS E PEDESTRES NO ESTADO DO CEARÁ - PROGRAMA SINALIZE - DOS DISTRITOS OPERACIONAIS DA SOP: DISTRITO OPERACIONAL DE LIMOEIRO DO NORTE-CE.",
+      "data_assinatura": "2026-01-07T00:00:00.000-03:00",
+      "valor_contrato": "21409895.05",
+      "descricao_situacao": "EM EXECUÇÃO - NORMAL",
+      "cod_orgao": "43200007"
+    },
+    {
+      "isn_sic": 1412457,
+      "descricao_objeto": "Contratação de serviços de saúde para procedimento cirúrgico cardíaco e OPME¿s necessários, conforme devidamente descrito no Termo de Referência e relatório médico.\nAtender decisão judicial proferida nos autos do Processo Judicial nº 3006874-86.2025.8.06.0112, que concedeu pedido do autor Sr. JOSE ALBERCIO PEREIRA",
+      "data_assinatura": "2026-01-07T00:00:00.000-03:00",
+      "valor_contrato": "86500.0",
+      "descricao_situacao": "EM EXECUÇÃO - NORMAL",
+      "cod_orgao": "46200008"
+    },
+    {
+      "isn_sic": 1412469,
+      "descricao_objeto": "RECURSO DESTINADO A AQUISIÇÃO DE MATERIAL DE LIMPEZA (PAPEL TOALHA) PARA HOSPITAL SÃO JOSÉ, REFERENTE ATA REGISTRO DE PREÇO 2025/04085, PREGÃO ELETRÔNICO 2024/0003",
+      "data_assinatura": "2026-01-08T00:00:00.000-03:00",
+      "valor_contrato": "108360.0",
+      "descricao_situacao": "EM EXECUÇÃO - NORMAL",
+      "cod_orgao": "24200224"
+    },
+    {
+      "isn_sic": 1430114,
+      "descricao_objeto": "Contratualização da ATA nº 707/2025, por 06 (seis) meses, no valor de R$ 530.200,00 para atender as necessidades do HCASG.",
+      "data_assinatura": "2026-01-08T00:00:00.000-03:00",
+      "valor_contrato": "530200.0",
+      "descricao_situacao": "VENCIDO",
+      "cod_orgao": "24200214"
+    },
+    {
+      "isn_sic": 1412400,
+      "descricao_objeto": "Aquisição de assento para vaso sanitário com tampa para atender as necessidades da Perícia Forense do Estado do Ceará",
+      "data_assinatura": "2026-01-08T00:00:00.000-03:00",
+      "valor_contrato": "457.8",
+      "descricao_situacao": "EM EXECUÇÃO - NORMAL",
+      "cod_orgao": "10100007"
+    },
+    {
+      "isn_sic": 1412405,
+      "descricao_objeto": "Aquisição de equipamentos de proteção individual (EPI) destinados aos colaboradores das necessidades da Perícia Forense do Estado do Ceará - ÓCULOS DE PROTEÇÃO E LUVA",
+      "data_assinatura": "2026-01-08T00:00:00.000-03:00",
+      "valor_contrato": "718.0",
+      "descricao_situacao": "EM EXECUÇÃO - NORMAL",
+      "cod_orgao": "10100007"
+    },
+    {
+      "isn_sic": 1412406,
+      "descricao_objeto": "Aquisição de equipamentos de proteção individual (EPI) destinados aos colaboradores das necessidades da Perícia Forense do Estado do Ceará - BOTA CANO LONGO",
+      "data_assinatura": "2026-01-08T00:00:00.000-03:00",
+      "valor_contrato": "4128.0",
+      "descricao_situacao": "EM EXECUÇÃO - NORMAL",
+      "cod_orgao": "10100007"
+    },
+    {
+      "isn_sic": 1413626,
+      "descricao_objeto": "Aquisição de 5 (cinco) veículos, tipo Picape.",
+      "data_assinatura": "2026-01-09T00:00:00.000-03:00",
+      "valor_contrato": "1159950.0",
+      "descricao_situacao": "EM EXECUÇÃO - NORMAL",
+      "cod_orgao": "47000000"
+    },
+    {
+      "isn_sic": 1412533,
+      "descricao_objeto": "Contratação de empresa na prestação de serviço de mão de obra terceirizada, cujos empregados sejam regidos pela CLT, para atender as necessidades de asseio e conservação, motorista, e saúde do CERAM - Centro Estadual de Referência a Atendimento a Mulher, situado dentro das dependências da Casa da Mulher Brasileira em Fortaleza/CE.",
+      "data_assinatura": "2026-01-09T00:00:00.000-03:00",
+      "valor_contrato": "1907119.8",
+      "descricao_situacao": "EM EXECUÇÃO - NORMAL",
+      "cod_orgao": "62000000"
+    },
+    {
+      "isn_sic": 1412499,
+      "descricao_objeto": "Serviço de locação de 6 serras sagitais, por 12 (doze) meses, para atender as necessidades do HCASG.",
+      "data_assinatura": "2026-01-09T00:00:00.000-03:00",
+      "valor_contrato": "251856.0",
+      "descricao_situacao": "EM EXECUÇÃO - NORMAL",
+      "cod_orgao": "24200214"
+    },
+    {
+      "isn_sic": 1412399,
+      "descricao_objeto": "Aquisição do TESTE IMUNOCROMATOGRÁFICO PARA DETECÇÃO QUALITATIVA ESPECÍFICA DE HEMOGLOBINA HUMANA, com embalagem primária individual e com limite de detecção de 40ng/m para atender as necessidades da Coordenadoria de Análises Laboratoriais Forense ¿ CALF da Perícia Forense do Estado do Ceará.",
+      "data_assinatura": "2026-01-09T00:00:00.000-03:00",
+      "valor_contrato": "29400.0",
+      "descricao_situacao": "EM EXECUÇÃO - NORMAL",
+      "cod_orgao": "10100007"
+    }
+  ]
+}

@@ -1,58 +1,28 @@
-
 import './ExpenseChart.css';
 
-const data = [
-  { month: 'Jan', value: 65 },
-  { month: 'Fev', value: 80 },
-  { month: 'Mar', value: 55 },
-  { month: 'Abr', value: 90 },
-  { month: 'Mai', value: 72 },
-  { month: 'Jun', value: 100 },
-  { month: 'Jul', value: 85 },
-  { month: 'Ago', value: 68 },
-  { month: 'Set', value: 95 },
-  { month: 'Out', value: 75 },
-  { month: 'Nov', value: 60 },
-  { month: 'Dez', value: 88 }
-];
+function ExpenseChart({ data }) {
+  const max = Math.max(1, ...data.map(({ value }) => value));
 
-function ExpenseChart() {
   return (
-    <div className="chart-card">
+    <section className="chart-card" aria-labelledby="chart-title">
       <div className="chart-header">
         <div>
-          <h3>Evolução das despesas</h3>
-          <p>Distribuição mensal demonstrativa</p>
+          <h2 id="chart-title">Contratos por dia</h2>
+          <p>Quantidade por data de assinatura</p>
         </div>
-
-        <select defaultValue="2026" className="chart-select">
-          <option value="2026">2026</option>
-          <option value="2025">2025</option>
-          <option value="2024">2024</option>
-        </select>
       </div>
-
-      <div className="chart">
-        {data.map((item) => (
-          <div className="chart-column" key={item.month}>
+      <ul className="chart">
+        {data.map(({ label, value }) => (
+          <li className="chart-column" key={label} aria-label={`${label}: ${value} contratos`}>
             <div className="bar-container">
-              <div
-                className="bar"
-                style={{ height: `${item.value}%` }}
-                title={`${item.value}%`}
-              />
+              <span className="bar-value">{value}</span>
+              <div className="bar" style={{ height: `${value / max * 100}%` }} />
             </div>
-
-            <span>{item.month}</span>
-          </div>
+            <span>{label}</span>
+          </li>
         ))}
-      </div>
-
-      <div className="chart-legend">
-        <span></span>
-        Despesas mensais ilustrativas
-      </div>
-    </div>
+      </ul>
+    </section>
   );
 }
 
