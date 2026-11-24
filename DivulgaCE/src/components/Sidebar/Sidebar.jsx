@@ -1,29 +1,16 @@
-
 import {
-  LayoutDashboard,
-  ChartColumn,
-  Wallet,
-  FileText,
-  Users,
+  Landmark,
   ShieldCheck
 } from 'lucide-react';
 
 import './Sidebar.css';
 
-function Sidebar() {
-  const menuItems = [
-    { label: 'Visão geral', icon: LayoutDashboard, href: '#visao-geral' },
-    { label: 'Histórico de gastos', icon: ChartColumn, href: '#historico' },
-    { label: 'Despesas', icon: Wallet, href: '#despesas' },
-    { label: 'Contratos', icon: FileText, href: '#contratos' },
-    { label: 'Governo', icon: Users, href: '#governo' }
-  ];
-
+function Sidebar({ menuItems, activeHash }) {
   return (
     <aside className="sidebar">
       <div>
         <div className="sidebar-logo">
-          <div className="logo-icon">D</div>
+          <div className="logo-icon"><Landmark size={21} aria-hidden="true" /></div>
           <div>
             <h2>DivulgaCE</h2>
             <span>Transparência pública</span>
@@ -31,9 +18,7 @@ function Sidebar() {
         </div>
 
         <div className="sidebar-section">
-          <span className="sidebar-label">MENU PRINCIPAL</span>
-
-          <nav className="sidebar-nav">
+          <nav className="sidebar-nav" aria-label="Navegação principal">
             {menuItems.map((item) => {
               const Icon = item.icon;
 
@@ -42,6 +27,7 @@ function Sidebar() {
                   href={item.href}
                   key={item.label}
                   className="nav-item"
+                  aria-current={activeHash === item.href ? 'page' : undefined}
                 >
                   <Icon size={19} strokeWidth={1.8} />
                   <span>{item.label}</span>

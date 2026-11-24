@@ -1,15 +1,11 @@
 .expense-history {
   display: grid;
-  gap: 24px;
+  gap: 16px;
   min-width: 0;
 }
 
-.expense-history h2 {
-  font-size: clamp(21px, 3vw, 28px);
-}
-
 .expense-history h3 {
-  font-size: 16px;
+  font-size: 17px;
 }
 
 .expense-history p {
@@ -20,29 +16,40 @@
 .expense-history-controls {
   display: flex;
   flex-wrap: wrap;
-  gap: 12px 18px;
+  gap: 10px;
+  margin: 15px 0 20px;
 }
 
 .expense-history-controls label {
   display: grid;
   gap: 5px;
+  flex: 1 1 140px;
   min-width: 0;
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 700;
 }
 
 .expense-history-controls select {
   width: 100%;
   padding: 8px;
-  background: #fff;
+  background: #f6f8f7;
   color: inherit;
   border: 1px solid #b5c8bf;
   border-radius: 8px;
 }
 
 .expense-history-highlight {
-  margin: 4px 0 10px;
-  font-weight: 700;
+  display: grid;
+  gap: 3px;
+  margin: 0 0 15px;
+}
+
+.expense-history-highlight strong {
+  font-size: clamp(20px, 3vw, 34px);
+  line-height: 1.2;
+  color: var(--ink);
+  letter-spacing: -.045em;
+  font-variant-numeric: tabular-nums;
 }
 
 .expense-history-scroll {
@@ -52,22 +59,26 @@
 
 .expense-years {
   display: grid;
-  grid-template-columns: repeat(10, minmax(61px, 1fr));
+  grid-template-columns: repeat(12, minmax(51px, 1fr));
   gap: 5px;
   list-style: none;
 }
 
 .expense-years button {
   display: grid;
-  grid-template-rows: auto 125px auto;
+  grid-template-rows: auto 156px auto;
   gap: 6px;
   width: 100%;
   border: 0;
   border-radius: 6px;
   padding: 5px 2px;
-  background: #f3f8f5;
+  background: transparent;
   color: #254937;
   font-size: 11px;
+}
+
+.expense-years button:hover {
+  background: #f1f6f2;
 }
 
 .expense-years button[aria-pressed="true"] {
@@ -79,17 +90,19 @@
   display: flex;
   align-items: flex-end;
   justify-content: center;
-  border-bottom: 1px solid #c9dcd0;
+  border-bottom: 1px solid #dce7e0;
+  background-image: linear-gradient(to top, #e9efeb 1px, transparent 1px);
+  background-size: 100% 25%;
 }
 
 .expense-year-track > span {
   width: 65%;
-  border-radius: 4px 4px 0 0;
-  background: #529476;
+  border-radius: 6px 6px 1px 1px;
+  background: linear-gradient(#a5d7be, #7cb298);
 }
 
 .expense-years button[aria-pressed="true"] .expense-year-track > span {
-  background: #126d46;
+  background: linear-gradient(#4db88a, #19754f);
 }
 
 .expense-history-hint {
@@ -151,4 +164,83 @@
 
 .expense-history footer p + p {
   margin-top: 5px;
+}
+
+.expense-history-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.65fr) minmax(0, 1fr);
+  gap: 16px;
+  align-items: start;
+}
+
+.expense-panel {
+  min-width: 0;
+}
+
+.expense-areas-toggle {
+  margin-top: 7px;
+  padding: 8px 10px;
+  border: 1px solid #d7e5dc;
+  border-radius: 8px;
+  background: #f1f7f3;
+  color: #165b3c;
+  font-size: 12px;
+  font-weight: 750;
+}
+
+.expense-areas-toggle:hover {
+  background: #dfefe6;
+}
+
+.expense-history-source {
+  padding: 13px 16px;
+  border: 1px solid #e1e9e3;
+  border-radius: 12px;
+  background: #f0f5f1;
+}
+
+.expense-history-source svg {
+  vertical-align: text-bottom;
+}
+
+@media (max-width: 1240px) {
+  .expense-history-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .expense-years button {
+    grid-template-rows: auto 112px auto;
+  }
+
+  .expense-history-controls {
+    margin-bottom: 14px;
+  }
+
+  .expense-area-line > span:last-child {
+    white-space: normal;
+  }
+}
+
+.expense-history-governors {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 7px 12px;
+  margin-bottom: 12px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.expense-history-governors > span {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.expense-history-governors .governor-portrait {
+  width: 28px;
+  height: 32px;
+  border-radius: 5px;
 }

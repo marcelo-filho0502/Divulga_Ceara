@@ -1,8 +1,9 @@
+import SpotlightCard from '../ReactBits/SpotlightCard';
 import './StatCard.css';
 
 function StatCard({ title, value, description, icon: Icon }) {
   return (
-    <div className="stat-card">
+    <SpotlightCard className="stat-card" theme="light" spotlightColor="#5ad398" intensity={0.13}>
       <div className="stat-card-top">
         <span>{title}</span>
 
@@ -14,7 +15,7 @@ function StatCard({ title, value, description, icon: Icon }) {
       <h2>{value}</h2>
 
       <p>{description}</p>
-    </div>
+    </SpotlightCard>
   );
 }
 

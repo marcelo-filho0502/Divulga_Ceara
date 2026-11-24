@@ -1,29 +1,20 @@
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 20px;
-  margin-bottom: 32px;
+.page-header {
+  display: grid;
+  gap: 4px;
+  margin-bottom: 22px;
 }
 
-.breadcrumb {
+.page-header p {
   display: flex;
   align-items: center;
   gap: 6px;
-  color: #84918c;
-  font-size: 11px;
-  margin-bottom: 10px;
-}
-
-.header-title h1 {
-  font-size: 26px;
-  color: #17251f;
-  font-weight: 700;
-  letter-spacing: -0.7px;
-}
-
-.header-title p {
-  color: #84918c;
+  color: var(--muted);
   font-size: 13px;
-  margin-top: 7px;
+  font-weight: 700;
+}
+
+.page-header h1 {
+  font-size: clamp(27px, 4vw, 39px);
+  line-height: 1.14;
+  letter-spacing: -.055em;
 }

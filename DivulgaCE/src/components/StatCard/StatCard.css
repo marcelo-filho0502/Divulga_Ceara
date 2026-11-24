@@ -1,15 +1,7 @@
-
-.stat-card {
-  background: #fff;
-  border: 1px solid #e9eeeb;
-  border-radius: 13px;
-  padding: 22px;
-  transition: transform 0.2s, box-shadow 0.2s;
-}
-
-.stat-card:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 8px 24px rgba(18, 55, 42, 0.06);
+.stat-card.spotlight-card {
+  border: 1px solid #e1e9e3;
+  border-radius: 17px;
+  padding: 20px;
 }
 
 .stat-card-top {
@@ -20,7 +12,7 @@
 }
 
 .stat-card-top > span {
-  color: #748179;
+  color: #53685e;
   font-size: 12px;
   font-weight: 500;
 }
@@ -44,6 +36,6 @@
 }
 
 .stat-card p {
-  color: #99a49d;
+  color: #53685e;
   font-size: 11px;
 }
