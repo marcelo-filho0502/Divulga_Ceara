@@ -1,6 +1,7 @@
 
 import {
   LayoutDashboard,
+  ChartColumn,
   Wallet,
   FileText,
   Users,
@@ -12,6 +13,7 @@ import './Sidebar.css';
 function Sidebar() {
   const menuItems = [
     { label: 'Visão geral', icon: LayoutDashboard, href: '#visao-geral' },
+    { label: 'Histórico de gastos', icon: ChartColumn, href: '#historico' },
     { label: 'Despesas', icon: Wallet, href: '#despesas' },
     { label: 'Contratos', icon: FileText, href: '#contratos' },
     { label: 'Governo', icon: Users, href: '#governo' }

@@ -3,6 +3,7 @@ import { useState } from 'react';
 
 import StatCard from '../../components/StatCard/StatCard';
 import ExpenseChart from '../../components/ExpenseChart/ExpenseChart';
+import ExpenseHistory from '../../components/ExpenseHistory/ExpenseHistory';
 import { fontesEstaduais, recorteContratos, urlContrato } from '../../services/estadual';
 import './Overview.css';
 
@@ -45,6 +46,8 @@ function Overview() {
 
   return (
     <div className="overview" id="visao-geral">
+      <ExpenseHistory />
+
       <p className="source-note">
         Contratos estaduais assinados de {dataBrasileira(inicio)} a {dataBrasileira(fim)}.
         {' '}Consulta de {dataBrasileira(consultadoEm)} · <a href={fontesEstaduais.contratos}>Dados originais</a>
