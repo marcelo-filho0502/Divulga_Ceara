@@ -1,7 +1,5 @@
-import { ArrowRight, BarChart3 } from 'lucide-react';
+import { ArrowRight, ArrowUpRight, BarChart3 } from 'lucide-react';
 
-import GradientText from '../../components/ReactBits/GradientText';
-import SpotlightCard from '../../components/ReactBits/SpotlightCard';
 import historico from '../../data/despesas-ce.json';
 import { formatarDespesa, gestoresDoAno, governadores, relatorioEstadual } from '../../services/historicoEstadual';
 import { GovernorPortrait } from '../../components/GovernorHistory/GovernorHistory';
@@ -13,24 +11,23 @@ const [gestor] = gestoresDoAno(ultimo.ano);
 function Overview({ links }) {
   return (
     <div className="page-stack" id="visao-geral">
-      <SpotlightCard className="overview-metric" spotlightColor="#75ecb1" intensity={0.2}
-        style={{ '--spotlight-card-surface': '#102d27' }}>
+      <section className="info-card overview-metric" aria-labelledby="overview-metric-label">
         <div>
-          <p><BarChart3 size={16} aria-hidden="true" /> Despesas liquidadas em {ultimo.ano}</p>
-          <strong><GradientText colors={['#abf7cb', '#e5f9ad', '#75ecb1']}>{formatarDespesa(ultimo.total)}</GradientText></strong>
-          <a href={relatorioEstadual(ultimo.ano)}>Relatório oficial de {ultimo.ano}</a>
+          <p id="overview-metric-label"><BarChart3 size={16} aria-hidden="true" /> Despesas liquidadas em {ultimo.ano}</p>
+          <strong>{formatarDespesa(ultimo.total)}</strong>
+          <a className="overview-report" href={relatorioEstadual(ultimo.ano)}>Relatório oficial de {ultimo.ano} <ArrowUpRight size={16} aria-hidden="true" /></a>
         </div>
-        <a className="overview-governor" href="#governo">
-          <GovernorPortrait id={gestor} />
+        <a className="overview-governor pressable" href="#governo">
+          <GovernorPortrait id={gestor} decorative />
           <span>{governadores[gestor].nome}<small>Governador no exercício</small></span>
           <ArrowRight size={16} aria-hidden="true" />
         </a>
-      </SpotlightCard>
+      </section>
 
       <nav className="overview-links" aria-label="Telas do painel">
         {links.map(({ label, description, icon: Icon, href }) => (
-          <a className="info-card overview-link" href={href} key={href}>
-            <Icon className="overview-link-icon" size={20} aria-hidden="true" />
+          <a className="info-card overview-link pressable" href={href} key={href}>
+            <div className="overview-link-mark"><Icon size={18} aria-hidden="true" /></div>
             <strong>{label}</strong>
             <span>{description}</span>
             <ArrowRight className="overview-link-arrow" size={17} aria-hidden="true" />

@@ -61,6 +61,12 @@ function App() {
 
   return (
     <div className="app-container">
+      <a className="skip-link" href="#main-content" onClick={(event) => {
+        event.preventDefault();
+        const main = document.getElementById('main-content');
+        main?.focus();
+        main?.scrollIntoView({ block: 'start' });
+      }}>Ir para o conteúdo</a>
       <Sidebar menuItems={pages} activeHash={page.href} />
       <main className="main-content" id="main-content" tabIndex={-1} aria-labelledby="page-title">
         <Header title={page.label} />

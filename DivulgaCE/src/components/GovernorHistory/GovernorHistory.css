@@ -1,73 +1,68 @@
 .governor-history {
   display: grid;
-  gap: 18px;
+  gap: var(--space-5);
 }
 
 .governor-history h2 {
   display: flex;
   align-items: center;
-  gap: 9px;
-  font-size: clamp(20px, 3vw, 26px);
-  letter-spacing: -.04em;
+  gap: var(--space-2);
+  margin-bottom: var(--space-1);
+  font-size: clamp(1.125rem, 2.5vw, 1.5rem);
 }
 
 .governor-history h2 svg {
-  flex-shrink: 0;
   color: var(--accent);
-}
-
-.governor-history p,
-.governor-sources {
-  color: var(--muted);
-  font-size: 13px;
 }
 
 .governor-options {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(100%, 134px), 1fr));
-  gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 8rem), 1fr));
+  gap: var(--space-2);
 }
 
 .governor-options button {
   display: grid;
   justify-items: center;
   align-content: start;
-  gap: 5px;
-  padding: 13px 8px;
-  border: 1px solid #dbe7df;
-  border-radius: 14px;
-  background: #f5f8f6;
-  color: var(--ink);
-}
-
-.governor-options button:hover {
-  background: #ecf5ef;
+  gap: var(--space-2);
+  padding: var(--space-3) var(--space-2);
+  border: 1px solid var(--border-control);
+  border-radius: var(--radius-sm);
+  background: var(--surface);
+  font-size: 0.875rem;
+  overflow-wrap: anywhere;
 }
 
 .governor-options button[aria-pressed="true"] {
-  border-color: #31805a;
-  background: #e5f3eb;
+  border-color: var(--accent);
+  background: var(--accent-soft);
+  color: var(--accent);
+  box-shadow: inset 0 -2px var(--accent);
 }
 
-.governor-options small {
+.governor-options small,
+.governor-expenses small {
   color: var(--muted);
 }
 
 .governor-portrait {
   display: block;
-  width: 79px;
-  height: 90px;
+  width: 4rem;
+  height: 4.5rem;
+  flex-shrink: 0;
   object-fit: cover;
   object-position: center 29%;
-  border-radius: 10px;
-  background: #dfece3;
+  border-radius: var(--radius-sm);
+  background: var(--surface-muted);
 }
 
 .governor-detail {
   min-width: 0;
-  padding: clamp(13px, 2vw, 21px);
-  border: 1px solid #dce8df;
-  border-radius: 14px;
+  padding: clamp(var(--space-3), 2vw, var(--space-5));
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow-wrap: anywhere;
 }
 
 .governor-detail header {
@@ -75,13 +70,13 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: start;
-  gap: 10px 18px;
-  margin-bottom: 10px;
+  gap: var(--space-4);
+  margin-bottom: var(--space-3);
 }
 
 .governor-detail header a,
 .governor-expenses {
-  font-size: 13px;
+  font-size: 0.875rem;
 }
 
 .governor-detail svg {
@@ -90,31 +85,31 @@
 
 .governor-total strong {
   display: block;
-  font-size: clamp(17px, 3vw, 26px);
-  letter-spacing: -.045em;
+  font-size: clamp(1.125rem, 3vw, 1.625rem);
+  letter-spacing: -0.035em;
 }
 
 .governor-expenses {
   list-style: none;
-  margin-bottom: 11px;
+  margin-bottom: var(--space-3);
+}
+
+.governor-total strong,
+.governor-expenses li > strong {
+  font-variant-numeric: tabular-nums;
 }
 
 .governor-expenses li {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  gap: 3px 14px;
-  padding: 9px 0;
-  border-top: 1px solid #e7eee9;
-}
-
-.governor-expenses small {
-  flex-basis: 100%;
-  color: var(--muted);
+  gap: var(--space-2) var(--space-4);
+  padding-block: var(--space-3);
+  border-bottom: 1px solid var(--border);
 }
 
 .governor-sources + .governor-sources {
-  margin-top: 4px;
+  margin-top: var(--space-1);
 }
 
 .governor-detail-profile,
@@ -122,30 +117,30 @@
 .governor-transition-photos {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: var(--space-2);
 }
 
 .governor-detail-profile .governor-portrait {
-  width: 54px;
-  height: 64px;
+  width: var(--space-12);
+  height: 3.5rem;
 }
 
 .governor-expense-track {
   flex-basis: 100%;
-  height: 4px;
-  border-radius: 9px;
-  background: #eaf3ed;
+  height: var(--space-1);
+  border-radius: var(--radius-sm);
+  background: var(--surface-muted);
 }
 
 .governor-expense-track > span {
   display: block;
   height: 100%;
   border-radius: inherit;
-  background: #31805a;
+  background: var(--accent-chart);
 }
 
 .governor-transition {
-  margin-top: 10px;
+  margin-top: var(--space-2);
 }
 
 .governor-transition li {
@@ -157,7 +152,12 @@
 }
 
 .governor-transition-photos .governor-portrait {
-  width: 30px;
-  height: 35px;
-  border-radius: 5px;
+  width: var(--space-8);
+  height: var(--space-10);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .governor-options button:not([aria-pressed="true"]):hover {
+    background: var(--surface-muted);
+  }
 }

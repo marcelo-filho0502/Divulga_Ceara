@@ -12,7 +12,7 @@ function Sidebar({ menuItems, activeHash }) {
         <div className="sidebar-logo">
           <div className="logo-icon"><Landmark size={21} aria-hidden="true" /></div>
           <div>
-            <h2>DivulgaCE</h2>
+            <strong>DivulgaCE</strong>
             <span>Transparência pública</span>
           </div>
         </div>
@@ -26,10 +26,10 @@ function Sidebar({ menuItems, activeHash }) {
                 <a
                   href={item.href}
                   key={item.label}
-                  className="nav-item"
+                  className="nav-item pressable"
                   aria-current={activeHash === item.href ? 'page' : undefined}
                 >
-                  <Icon size={19} strokeWidth={1.8} />
+                  <Icon size={18} aria-hidden="true" />
                   <span>{item.label}</span>
                 </a>
               );
@@ -40,7 +40,7 @@ function Sidebar({ menuItems, activeHash }) {
 
       <div className="sidebar-footer">
         <div className="footer-icon">
-          <ShieldCheck size={20} />
+          <ShieldCheck size={18} aria-hidden="true" />
         </div>
         <div>
           <strong>Dados públicos</strong>

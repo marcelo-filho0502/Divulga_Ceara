@@ -1,16 +1,36 @@
-# React + Vite
+# DivulgaCE
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Painel de transparência para explorar despesas e contratos do Governo do Estado do Ceará. O projeto reúne recortes de dados públicos e links para os registros oficiais.
 
-Currently, two official plugins are available:
+## O que o painel oferece
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **Visão geral** com o total de despesas liquidadas no exercício mais recente da série e o link para o relatório oficial.
+- **Histórico de gastos** de 2014 a 2025, com filtros por área e ano e detalhamento das finalidades orçamentárias.
+- **Governadores** com valores por gestão e detalhamento dos períodos de transição de 2022 conforme a granularidade dos relatórios disponíveis.
+- **Despesas** com acesso à execução orçamentária e às notas de empenho no Ceará Transparente.
+- **Contratos** com indicadores do recorte disponível, gráfico de assinaturas, busca e ordenação por assinatura ou valor.
 
-## React Compiler
+## Executar localmente
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Na pasta que contém este README, com Node.js compatível com a versão do Vite do projeto (20.19+ ou 22.12+), execute:
 
-## Expanding the Oxlint configuration
+```sh
+npm ci
+npm run dev
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+Abra o endereço local exibido no terminal.
+
+```sh
+npm run lint     # Verifica o código com Oxlint
+npm run build    # Gera os arquivos de produção em dist/
+npm run preview  # Serve localmente o build gerado
+```
+
+## Dados e fontes
+
+A série de despesas apresenta valores nominais liquidados e exclui despesas intraorçamentárias. A fonte histórica é o Siconfi, RREO Anexo 02, com a DCA, Anexo I-E, para 2014. O painel indica o período e a data de consulta do recorte de contratos e oferece links para os registros originais. [Tesouro Transparente](https://www.tesourotransparente.gov.br/ckan/dataset/api-rreo-entes) · [Ceará Transparente](https://cearatransparente.ce.gov.br/)
+
+## Frontend
+
+O projeto usa React, Vite, CSS e ícones Lucide. As telas ficam em `src/pages/`, os componentes em `src/components/` e os dados locais em `src/data/`. As variáveis de design ficam em `src/index.css`. A interface inclui navegação por teclado, foco visível e suporte à preferência por movimento reduzido.

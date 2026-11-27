@@ -7,11 +7,11 @@ import {
 } from '../../services/historicoEstadual';
 import './GovernorHistory.css';
 
-export function GovernorPortrait({ id }) {
+export function GovernorPortrait({ id, decorative = false }) {
   const { nome, foto } = governadores[id];
 
   return <img className="governor-portrait" src={`${import.meta.env.BASE_URL}governo/${foto}`}
-    alt={`Retrato de ${nome}`} width="96" height="112" loading="lazy" />;
+    alt={decorative ? '' : `Retrato de ${nome}`} width="96" height="112" loading="lazy" />;
 }
 
 function GovernorHistory() {
@@ -39,7 +39,7 @@ function GovernorHistory() {
         {Object.entries(governadores).reverse().map(([id, { nome, mandato }]) => (
           <button type="button" key={id} aria-pressed={id === gestor}
             aria-controls="governador-detalhe" onClick={() => setGestor(id)}>
-            <GovernorPortrait id={id} />
+            <GovernorPortrait id={id} decorative />
             <strong>{nome}</strong>
             <small>{mandato}</small>
           </button>
@@ -49,7 +49,7 @@ function GovernorHistory() {
       <article className="governor-detail" id="governador-detalhe" aria-labelledby="governador-nome">
         <header>
           <div className="governor-detail-profile">
-            <GovernorPortrait id={gestor} />
+            <GovernorPortrait id={gestor} decorative />
             <div>
               <h3 id="governador-nome">{perfil.nome}</h3>
               <p>{perfil.cargo} do Ceará · {perfil.mandato}</p>
@@ -58,7 +58,7 @@ function GovernorHistory() {
           </div>
           <div className="governor-total">
             <p>{periodoIndividual ? 'Total no recorte, fora do bimestre de transição' : 'Total no recorte histórico'}</p>
-            <strong>{formatarDespesa(totalConfirmado)}</strong>
+            <strong key={gestor} className="data-update">{formatarDespesa(totalConfirmado)}</strong>
           </div>
         </header>
         <ul className="governor-expenses">
@@ -85,7 +85,7 @@ function GovernorHistory() {
             <li key={periodo}>
               <span className="governor-transition-period">
                 <span className="governor-transition-photos">
-                  {gestores.map((id) => <GovernorPortrait key={id} id={id} />)}
+                  {gestores.map((id) => <GovernorPortrait key={id} id={id} decorative />)}
                 </span>
                 <span>
                   <strong>{periodo}</strong>

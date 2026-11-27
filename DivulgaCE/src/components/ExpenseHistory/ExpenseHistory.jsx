@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { ArrowUpRight } from 'lucide-react';
+import { ArrowUpRight, ChevronRight } from 'lucide-react';
 
 import historico from '../../data/despesas-ce.json';
 import { gestoresDoAno, governadores, relatorioEstadual } from '../../services/historicoEstadual';
@@ -41,7 +41,7 @@ function ExpenseHistory() {
 
       <div className="expense-history-grid">
         <div className="info-card expense-panel">
-          <h3>Evolução anual</h3>
+          <h2 id="evolucao-anual">Evolução anual</h2>
           <div className="expense-history-controls">
             <label>
               Área na série histórica
@@ -60,15 +60,15 @@ function ExpenseHistory() {
 
           <p className="expense-history-highlight" aria-live="polite">
             <span>{ano} · {filtro || 'Todas as áreas'}</span>
-            <strong>{selecionado.valor == null ? 'Não informado' : moeda.format(selecionado.valor / 100)}</strong>
+            <strong className="data-update" key={`${ano}:${filtro}`}>{selecionado.valor == null ? 'Não informado' : moeda.format(selecionado.valor / 100)}</strong>
           </p>
           <div className="expense-history-governors">
             {gestores.map((id) => (
-              <span key={id}><GovernorPortrait id={id} />{governadores[id].nome}</span>
+              <span key={id}><GovernorPortrait id={id} decorative />{governadores[id].nome}</span>
             ))}
             {gestores.length > 1 && <a href="#governo-2022">Ver a transição de 2022</a>}
           </div>
-          <div className="expense-history-scroll">
+          <div className="expense-history-scroll" role="region" aria-labelledby="evolucao-anual" tabIndex={0}>
             <ul className="expense-years">
               {serie.map(({ ano: anoBarra, valor }) => {
                 const exato = valor == null ? 'Não informado' : moeda.format(valor / 100);
@@ -90,13 +90,14 @@ function ExpenseHistory() {
         </div>
 
         <div className="info-card expense-panel">
-          <h3>Onde o dinheiro foi aplicado em {ano}</h3>
+          <h2>Onde o dinheiro foi aplicado em {ano}</h2>
           <p className="expense-history-hint">Abra uma área para ver as finalidades registradas no orçamento e seus valores.</p>
           <ul className="expense-areas" id="historico-areas">
             {areasVisiveis.map(({ nome, centavos, subfuncoes }) => (
               <li key={nome}>
                 <details>
                   <summary>
+                    <ChevronRight className="expense-area-chevron" size={16} aria-hidden="true" />
                     <span className="expense-area-line">
                       <strong>{nome}</strong>
                       <span>{moeda.format(centavos / 100)} · {percentual.format(centavos / exercicio.total)}</span>
