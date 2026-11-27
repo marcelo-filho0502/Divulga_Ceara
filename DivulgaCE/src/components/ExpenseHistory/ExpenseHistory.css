@@ -1,0 +1,262 @@
+.expense-history {
+  display: grid;
+  gap: var(--space-4);
+  min-width: 0;
+}
+
+.expense-history h2 {
+  font-size: 1.125rem;
+}
+
+.expense-history p {
+  color: var(--muted);
+  font-size: 0.875rem;
+}
+
+.expense-history-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  align-items: start;
+  gap: var(--space-4);
+}
+
+.expense-history-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+  margin-block: var(--space-4) var(--space-5);
+}
+
+.expense-history-controls label {
+  display: grid;
+  flex: 1 1 12rem;
+  min-width: 0;
+  gap: var(--space-2);
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.expense-history-controls select {
+  width: 100%;
+  min-height: var(--target);
+  padding: var(--space-2) var(--space-3);
+  background: var(--surface);
+  border: 1px solid var(--border-control);
+  border-radius: var(--radius-sm);
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.expense-history-highlight {
+  display: grid;
+  gap: var(--space-1);
+  margin-bottom: var(--space-3);
+}
+
+.expense-history-highlight strong {
+  font-size: clamp(1.375rem, 3vw, 2rem);
+  line-height: 1.2;
+  color: var(--ink);
+  letter-spacing: -0.035em;
+  font-variant-numeric: tabular-nums;
+  overflow-wrap: anywhere;
+}
+
+.expense-history-governors,
+.expense-history-governors > span {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.expense-history-governors {
+  flex-wrap: wrap;
+  gap: var(--space-2) var(--space-3);
+  margin-bottom: var(--space-3);
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.expense-history-governors .governor-portrait {
+  width: var(--space-6);
+  height: var(--space-8);
+  border-radius: var(--radius-sm);
+}
+
+.expense-history-scroll {
+  overflow-x: auto;
+  padding: var(--space-1);
+}
+
+.expense-years {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: minmax(3.75rem, 1fr);
+  gap: var(--space-1);
+  list-style: none;
+}
+
+.expense-years button {
+  display: grid;
+  grid-template-rows: auto clamp(6rem, 14vw, 10rem) auto;
+  gap: var(--space-2);
+  width: 100%;
+  height: 100%;
+  border: 0;
+  border-radius: var(--radius-sm);
+  padding: var(--space-2) var(--space-1);
+  background: transparent;
+  color: var(--muted);
+  font-size: 0.75rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.expense-years button[aria-pressed="true"] {
+  background: var(--accent-soft);
+  color: var(--accent);
+}
+
+.expense-year-track {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  border-bottom: 1px solid var(--border);
+  background: repeating-linear-gradient(
+    to top,
+    var(--border) 0 1px,
+    transparent 1px 25%
+  );
+}
+
+.expense-year-track > span {
+  width: 64%;
+  border-radius: var(--space-1) var(--space-1) 0 0;
+  background: var(--chart-muted);
+}
+
+.expense-years button[aria-pressed="true"] .expense-year-track > span {
+  background: var(--accent-chart);
+}
+
+.expense-history-hint {
+  margin-block: var(--space-1) var(--space-4);
+}
+
+.expense-areas,
+.expense-subareas {
+  list-style: none;
+  font-size: 0.875rem;
+}
+
+.expense-areas details {
+  border-top: 1px solid var(--border);
+}
+
+.expense-areas summary {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  align-items: start;
+  gap: var(--space-2);
+  min-height: var(--target);
+  padding: var(--space-3) var(--space-2);
+  border-radius: var(--radius-sm);
+  list-style: none;
+  transition: background-color var(--duration-hover) var(--ease-out);
+}
+
+.expense-areas summary::-webkit-details-marker {
+  display: none;
+}
+
+.expense-area-chevron {
+  margin-top: 0.125rem;
+  color: var(--muted);
+  transition: transform var(--duration-hover) var(--ease-out);
+}
+
+.expense-areas details[open] .expense-area-chevron {
+  transform: rotate(90deg);
+}
+
+.expense-area-line {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: var(--space-1) var(--space-3);
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.expense-area-line > span:last-child {
+  font-variant-numeric: tabular-nums;
+}
+
+.expense-area-track {
+  display: block;
+  grid-column: 2;
+  height: var(--space-1);
+  border-radius: var(--radius-sm);
+  background: var(--surface-muted);
+}
+
+.expense-area-track > span {
+  display: block;
+  height: 100%;
+  border-radius: inherit;
+  background: var(--accent-chart);
+}
+
+.expense-subareas {
+  margin-inline: var(--space-8) var(--space-2);
+  padding-bottom: var(--space-3);
+  color: var(--muted);
+}
+
+.expense-subareas li {
+  padding-block: var(--space-1);
+}
+
+.expense-history-source {
+  padding: var(--space-4);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  background: var(--surface-muted);
+}
+
+.expense-history-source p + p {
+  margin-top: var(--space-2);
+}
+
+.expense-history-source svg {
+  vertical-align: text-bottom;
+}
+
+.expense-areas-toggle {
+  width: 100%;
+  min-height: var(--target);
+  margin-top: var(--space-3);
+  padding-inline: var(--space-3);
+  border: 1px solid var(--border-control);
+  border-radius: var(--radius-sm);
+  background: var(--surface);
+  color: var(--accent);
+  font-size: 0.875rem;
+  font-weight: 650;
+}
+
+@media (min-width: 94rem) {
+  .expense-history-grid {
+    grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr);
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .expense-years button:not([aria-pressed="true"]):hover,
+  .expense-areas summary:hover {
+    background: var(--surface-muted);
+  }
+
+  .expense-areas-toggle:hover {
+    background: var(--accent-soft);
+  }
+}

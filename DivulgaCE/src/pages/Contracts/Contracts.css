@@ -1,0 +1,134 @@
+.source-note {
+  padding: var(--space-3) var(--space-4);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  background: var(--surface-muted);
+  color: var(--muted);
+  font-size: 0.875rem;
+}
+
+.contract-search {
+  display: grid;
+  gap: var(--space-2);
+  max-width: 28rem;
+  margin: var(--space-4) 0 var(--space-3);
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.contract-search input {
+  width: 100%;
+  min-height: var(--target);
+  padding: var(--space-2) var(--space-3);
+  border: 1px solid var(--border-control);
+  border-radius: var(--radius-sm);
+  background: var(--surface);
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.contract-search input::placeholder {
+  color: var(--muted);
+}
+
+.contract-scroll {
+  overflow-x: auto;
+  margin-top: var(--space-4);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+}
+
+.contract-table {
+  width: 100%;
+  min-width: 38rem;
+  border-collapse: collapse;
+  background: var(--surface);
+  font-size: 0.875rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.contract-table th,
+.contract-table td {
+  padding: var(--space-3);
+  text-align: start;
+  vertical-align: top;
+}
+
+.contract-table th {
+  vertical-align: middle;
+}
+
+.contract-table td {
+  border-top: 1px solid var(--border);
+}
+
+.contract-table td:first-child {
+  overflow-wrap: anywhere;
+}
+
+.contract-table td:not(:first-child) {
+  white-space: nowrap;
+}
+
+.contract-table .contract-value {
+  text-align: end;
+}
+
+.contract-table thead {
+  background: var(--surface-muted);
+}
+
+.contract-table .contract-sort-heading {
+  padding-block: 0;
+}
+
+.contract-sort {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-1);
+  min-height: var(--target);
+  margin-inline: calc(-1 * var(--space-2));
+  padding-inline: var(--space-2);
+  border: 0;
+  border-radius: var(--radius-sm);
+  background: transparent;
+  font-weight: inherit;
+}
+
+.contract-sort svg {
+  color: var(--muted);
+}
+
+.contract-sort-heading[aria-sort] svg {
+  color: var(--accent);
+}
+
+.contract-table td a {
+  display: inline-flex;
+  align-items: center;
+  min-height: var(--target);
+  margin-block: calc(-1 * var(--space-2));
+}
+
+.contract-empty {
+  margin-top: var(--space-4);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  background: var(--canvas);
+  padding: var(--space-8) var(--space-4);
+  text-align: center;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .contract-sort:hover {
+    background: var(--accent-soft);
+  }
+
+  .contract-table tbody tr:hover {
+    background: var(--canvas);
+  }
+}
+
+.contract-table tbody tr:focus-within {
+  background: var(--canvas);
+}

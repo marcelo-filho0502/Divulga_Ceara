@@ -1,14 +1,11 @@
 import { MapPin } from 'lucide-react';
 import './Header.css';
 
-function Header() {
+function Header({ title }) {
   return (
-    <header className="header">
-      <div className="header-title">
-        <div className="breadcrumb"><MapPin size={13} />Ceará, Brasil / Painel</div>
-        <h1>Visão geral</h1>
-        <p>Consulte contratos e fontes oficiais de despesas do Governo do Ceará.</p>
-      </div>
+    <header className="page-header">
+      <p><MapPin size={15} aria-hidden="true" /> Ceará, Brasil</p>
+      <h1 id="page-title">{title}</h1>
     </header>
   );
 }
