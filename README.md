@@ -12,9 +12,10 @@ Painel de transparência para explorar despesas e contratos do Governo do Estado
 
 ## Executar localmente
 
-Na pasta que contém este README, com Node.js compatível com a versão do Vite do projeto (20.19+ ou 22.12+), execute:
+Com Node.js compatível com a versão do Vite do projeto (20.19+ ou 22.12+), entre na pasta do aplicativo e execute:
 
 ```sh
+cd DivulgaCE
 npm ci
 npm run dev
 ```
@@ -33,4 +34,4 @@ A série de despesas apresenta valores nominais liquidados e exclui despesas int
 
 ## Frontend
 
-O projeto usa React, Vite, CSS e ícones Lucide. As telas ficam em `src/pages/`, os componentes em `src/components/` e os dados locais em `src/data/`. As variáveis de design ficam em `src/index.css`. A interface inclui navegação por teclado, foco visível e suporte à preferência por movimento reduzido.
+O projeto usa React, Vite, CSS e ícones Lucide. As telas ficam em `DivulgaCE/src/pages/`, os componentes em `DivulgaCE/src/components/` e os dados locais em `DivulgaCE/src/data/`. As variáveis de design ficam em `DivulgaCE/src/index.css`. A interface inclui navegação por teclado, foco visível e suporte à preferência por movimento reduzido.
